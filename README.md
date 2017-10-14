@@ -1,8 +1,29 @@
 ---
 services: service-fabric
 platforms: dotnet
-author: mikkelhegn
----
+
+This Sample of code was taken from Microsoft Azure Service Fabric Samples. 
+
+After downloading the code do the below steps to create your cloud cluster.
+
+You can try azure service fabric for free using the below url to create your own cluster.
+1. Login to https://try.servicefabric.azure.com/
+2. Use your facebook or github credentials.
+3. Then select Join Windows Cluster.
+4. You will get the details of your cluster.
+
+You can use Service Fabric explorer url to manage your service fabric cluster.This is a sample below.
+http://winx6ituukqh.westus.cloudapp.azure.com:19080/Explorer/index.html
+
+Copy the connection endpoint from above portal and update the Publish Profile - Cloud.Xml
+As shown below.
+<ClusterConnectionParameters ConnectionEndpoint="winx2bmbhhjn.westus.cloudapp.azure.com:19000" />
+
+Publish steps are covered in the word document.
+
+Contact me for any questions on service fabric at baskarrao.dandlamudi@outlook.com
+
+Below are the links for trying various sample projects from azure portal.
 
 # Service Fabric .NET Quickstart
 This repository contains an quickstart project for [Microsoft Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/). The quickstart project contains a single application with multiple services demonstrating the basic concepts of service communication and use of reliable dictionaries.
